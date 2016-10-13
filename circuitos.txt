@@ -1,0 +1,33 @@
+Cicuito BMV:
+- TX BMV (pino 3 da esquerda p/ direita)        -> Resistor 1k¹ -> RX1 (pino 19 - MEGA);
+- Gnd BMV (pino 1)                              -> Resistor 1k  -> Gnd MEGA (caso as fontes de energia sejam diferentes).
+  Nota 1: Os resistores em série com o BMV são para limitar a corrente drenada em caso de problemas.
+
+Circuito Cartão SD:
+- MOSI -> 51 MEGA;
+- MISO -> 50 MEGA;
+- CLK  -> 52 MEGA;
+- CS   -> 53 MEGA.
+
+Circuito Real Time Clock:
+- SQ  -> NC;
+- DS  -> NC;
+- SCL -> 21 MEGA;
+- SDA -> 20 MEGA;
+- VCC -> 5V MEGA;
+- GND -> GND MEGA;
+- BAT -> NC.
+
+Circuito Termistores:
+- 5V MEGA -> resistor 10k -> termistor -> GND
+- Leitura no divisor de tensão.
+- pinos utilizados a partir de A0.
+
+Circuito Transdutor de rotação
+- VCC -> 5V MEGA;
+- Vout-> A2 MEGA
+- GND -> GND MEGA;
+
+Circuito GPS Garmin GPSmap 78S
+- TX GPS (pino 2)        -> Resistor 1k¹ -> RX (pino 10 - MEGA);
+- GND GPS (pino 1)       -> Resistor 1k¹ -> GND MEGA;
